@@ -1,0 +1,66 @@
+body{
+    background-color: saddlebrown;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    border: red 2px solid;
+    position: relative;
+}
+.item{
+    width: 40px;
+    height: 40px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    position: absolute;
+}
+.anim-1{
+    margin-left: 80px;
+    animation: animation-1 2s infinite alternate ease-in-out;
+}
+@keyframes animation-1{
+    0%{
+        background-color: darkturquoise;
+    }
+    100%{
+        background-color: aqua;
+        margin-top: 160px;
+    }
+}
+.anim-2{
+    animation: animation-2 2s infinite alternate ease-in-out;
+    margin-top: 160px;
+}
+@keyframes animation-2{
+    0%{
+        background-color: chartreuse;
+    }
+    100%{
+        margin-top: 0px;
+        margin-left: 160px;
+        background-color: yellow;
+    }
+}
+.anim-3{
+    animation: animation-3 2s infinite alternate ease-in-out;
+}
+@keyframes animation-3{
+    0%{
+        background-color: deeppink;
+    }
+    33%{
+        margin-top: 0px;
+        margin-left: 160px;
+        background-color: fuchsia;
+    }
+    66%{
+        margin-top: 160px;
+        margin-left: 0px;
+        background-color: magenta;
+    }
+    100%{
+        margin-top: 160px;
+        margin-left: 160px;
+        background-color: mediumorchid;
+    }
+}
